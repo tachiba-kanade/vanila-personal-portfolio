@@ -55,7 +55,7 @@ a {
 a:hover {
   color: grey;
   text-decoration: underline;
-  text-underline-offset: 0.1rem;
+  text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
 
@@ -122,6 +122,7 @@ a:hover {
 .menu-links.open {
   max-height: 300px;
 }
+
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
 }
@@ -146,67 +147,74 @@ a:hover {
   transform: none;
 }
 
-  /* SECTIONS */
-  section{
-    padding: 4vh;
-    height: 96vh;
-    margin:0 10 rem;
-    box-sizing: border-box;
-    min-height: fit-content;
+/* SECTIONS */
 
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
 
-  }
-  section-container{
+.section-container {
+  display: flex;
+}
 
-    display: flex;
-  }
-  /*PROFILE*/
-  #profile{
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height: 80vh;
-  }
-.section_pic-container{
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
   display: flex;
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
 
+.section__text {
+  align-self: center;
+  text-align: center;
 }
-.section__text
-{
-align-self: center;
-text-align:center ;
+
+.section__text p {
+  font-weight: 600;
 }
-.section__text p
-{
-font-weight: 600;
+
+.section__text__p1 {
+  text-align: center;
 }
-.section__text__p1{
-  text-align:center;
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
-.section__text__p2{
- font-size: 1.75rem;
- margin-bottom: 1rem;
-}
-.title{
+
+.title {
   font-size: 3rem;
   text-align: center;
 }
-#socials-container{
+
+#socials-container {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
 }
-/*ICONS*/
-.icon{
+
+/* ICONS */
+
+.icon {
   cursor: pointer;
   height: 2rem;
-
 }
-/*BUTTONS*/
+
+/* BUTTONS */
 
 .btn-container {
   display: flex;
@@ -253,7 +261,8 @@ font-weight: 600;
 .btn-container {
   gap: 1rem;
 }
-/*ABOUT SECTION*/
+
+/* ABOUT SECTION */
 
 #about {
   position: relative;
@@ -275,11 +284,8 @@ font-weight: 600;
   display: flex;
 }
 
-.about-pic-modified {
+.about-pic {
   border-radius: 2rem;
-  height: 450px;
-  width: 400px;
-
 }
 
 .arrow {
